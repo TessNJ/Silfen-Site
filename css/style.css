@@ -1,0 +1,38 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+}
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*Variables*/
+:root {
+  --primary-colour: #7bafd4;
+  --secondary-colour: #aed5b2;
+  --tertiary-colour: #edff00;
+  --primary-font: "Manrope", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --primary-font-colour: black;
+  --secondary-font-colour: white;
+}
+
+/*General Styling*/
+
+/*Header general*/
+
+/*Footer general*/
+
+/*Sustainability general*/
+
+/*Shop general*/
+
+/*Product general*/
+
+/*Responsive*/
+@supports (display: grid) {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1101px) {
+  }
+}
