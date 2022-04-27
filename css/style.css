@@ -26,6 +26,22 @@
 /*Sustainability general*/
 
 /*Shop general*/
+/* .colours {
+  background-color: blue;
+} */
+.colours span {
+  background-color: lightblue;
+}
+#shop-main section {
+  display: grid;
+}
+.singular-item {
+  background-color: lightgrey;
+  border: 2px solid grey;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
 
 /*Product general*/
 
