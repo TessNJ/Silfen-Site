@@ -12,7 +12,7 @@ async function getData() {
 }
 
 function showItems(bags) {
-  console.log(bags._embedded);
+  // console.log(bags._embedded);
   const template = document.querySelector("#shop-template").content;
   bags.forEach((item) => {
     const templateClone = template.cloneNode(true);
@@ -21,11 +21,14 @@ function showItems(bags) {
       item._embedded[
         "wp:featuredmedia"
       ][0].media_details.sizes.medium.source_url;
-    templateClone.querySelector("h4").textContent = item.title.rendered;
-    templateClone.querySelector("h5").textContent = `DKK ${item.price}`;
-
+    templateClone.querySelector("img").alt =
+      item._embedded["wp:featuredmedia"][0].alt_text;
     let colours = item._embedded["wp:term"];
-
+    templateClone.querySelector("h4").textContent = item.title.rendered;
+    templateClone.querySelector("h5").textContent = `DKK  ${item.price},00`;
+    templateClone
+      .querySelector("a")
+      .setAttribute("href", `product.html?=${item.id}`);
     document.querySelector("main .shop-list").appendChild(templateClone);
   });
 }

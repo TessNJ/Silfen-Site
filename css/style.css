@@ -26,27 +26,60 @@
 /*Sustainability general*/
 
 /*Shop general*/
-/* .colours {
-  background-color: blue;
-} */
+#shop-main h5 {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+}
+
+#shop-main h4 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+
+#shop-main h1 {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  padding: 5% 0%;
+}
 .colours span {
   background-color: lightblue;
 }
-#shop-main section {
+.colours {
+  padding: 5% 2%;
+}
+.shop-list {
   display: grid;
+  row-gap: 10%;
+  column-gap: 2%;
+  padding-bottom: 5%;
+}
+.singular-item img {
+  max-width: 100%;
 }
 .singular-item {
-  background-color: lightgrey;
-  border: 2px solid grey;
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  gap: 3%;
 }
+
+.img-colours {
+  background-color: rgb(246, 246, 246);
+  border: solid rgb(246, 246, 246) 4px;
+}
+
+/* .img-hover:after:hover {
+  content:;
+} */
 
 /*Product general*/
 
 /*Responsive*/
 @supports (display: grid) {
+  .shop-list {
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-around;
+  }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1101px) {
