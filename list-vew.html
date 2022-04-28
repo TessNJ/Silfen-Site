@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Shop</title>
   </head>
   <body>
+    <header></header>
+    <main id="shop-main">
+      <h1>All Products</h1>
+      <section class="shop-list">
+        <template id="shop-template">
+          <div class="singular-item">
+            <a href="product-view.html"></a>
+            <div class="img-colours">
+              <p class="colours"> Colours -<span>$</span></p>
+              <div class="img-hover">
+                <img src="https://loremflickr.com/320/320" alt="#" />
+              </div>
+            </div>
+            <div class="shop-info">
+              <h4>Name</h4>
+              <h5>Price</p>
+            </div>
+          </div>
+        </template>
+      </section>
+    </main>
+    <footer></footer>
     <script src="js/list-view.js"></script>
   </body>
 </html>
