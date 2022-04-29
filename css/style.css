@@ -22,6 +22,12 @@
 /*Header general*/
 
 /*Footer general*/
+footer {
+  background-color: var(--primary-colour);
+  margin-top: 15%;
+  font-family: var(--primary-font);
+  color: var(--secondary-font-colour);
+}
 
 /*Sustainability general*/
 
