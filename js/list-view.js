@@ -21,6 +21,8 @@ function showItems(bags) {
       item._embedded[
         "wp:featuredmedia"
       ][0].media_details.sizes.medium.source_url;
+    templateClone.querySelector("img").alt =
+      item._embedded["wp:featuredmedia"][0].alt_text;
     //Messing with hover
     templateClone
       .querySelector("img")
@@ -28,11 +30,22 @@ function showItems(bags) {
         console.log("Here!", item.image2.guid);
         // templateClone.querySelector("img").src = event.image2.guid;
         // templateClone.querySelector("img").src = item.image2.guid;
+        console.log("Here", event);
+        event.srcElement.src = item.image2.guid;
+        event.srcElement.alt = item.image2.post_title;
+      });
+    templateClone
+      .querySelector("img")
+      .addEventListener("mouseout", function (event) {
+        console.log("here2", event);
+        event.srcElement.src =
+          item._embedded[
+            "wp:featuredmedia"
+          ][0].media_details.sizes.medium.source_url;
+        event.srcElement.alt = item._embedded["wp:featuredmedia"][0].alt_text;
       });
 
     //End Messing with hover
-    templateClone.querySelector("img").alt =
-      item._embedded["wp:featuredmedia"][0].alt_text;
     let colours = item._embedded["wp:term"];
     templateClone.querySelector("h4").textContent = item.title.rendered;
     templateClone.querySelector("h5").textContent = `DKK  ${item.price},00`;
