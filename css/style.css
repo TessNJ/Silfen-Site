@@ -27,6 +27,36 @@ footer {
   margin-top: 15%;
   font-family: var(--primary-font);
   color: var(--secondary-font-colour);
+  padding: 2vw;
+}
+footer section {
+  display: flex;
+  gap: 10%;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer div {
+  padding: 2%;
+}
+footer a {
+  text-decoration: none;
+  color: var(--secondary-font-colour);
+}
+footer form input {
+  width: 70%;
+  padding: 1.5%;
+}
+footer form button {
+  width: 23%;
+  background-color: var(--secondary-font-colour);
+  border-radius: 0.2vw;
+  border: none;
+  padding: 1.5%;
+}
+footer h5 {
+  font-family: var(--secondary-font);
 }
 
 /*Sustainability general*/
@@ -48,6 +78,11 @@ footer {
   font-weight: 500;
   padding: 5% 0%;
 }
+
+#shop-main a {
+  text-decoration: none;
+  color: var(--primary-font-colour);
+}
 .colours span {
   background-color: lightblue;
 }
@@ -56,9 +91,8 @@ footer {
 }
 .shop-list {
   display: grid;
-  row-gap: 10%;
-  column-gap: 2%;
-  padding-bottom: 5%;
+  margin-bottom: 10%;
+  row-gap: 3vw;
 }
 .singular-item img {
   max-width: 100%;
@@ -76,10 +110,6 @@ footer {
   border: solid rgb(246, 246, 246) 4px;
 }
 
-/* .img-hover:after:hover {
-  content:;
-} */
-
 /*Product general*/
 
 /*Responsive*/
@@ -88,7 +118,23 @@ footer {
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-around;
   }
+  footer section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  footer section div {
+    max-width: 90%;
+    align-self: center;
+  }
   @media screen and (min-width: 768px) {
+    footer section {
+      flex-wrap: nowrap;
+    }
+    footer section div {
+      max-width: 30%;
+      align-self: flex-start;
+    }
   }
   @media screen and (min-width: 1101px) {
   }
