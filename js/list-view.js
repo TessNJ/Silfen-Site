@@ -21,6 +21,13 @@ function showItems(bags) {
       item._embedded[
         "wp:featuredmedia"
       ][0].media_details.sizes.medium.source_url;
+
+    templateClone
+      .querySelector("img")
+      .addEventListener("mouseover", function (event) {
+        console.log("Here!");
+      });
+
     templateClone.querySelector("img").alt =
       item._embedded["wp:featuredmedia"][0].alt_text;
     let colours = item._embedded["wp:term"];
