@@ -46,7 +46,8 @@ footer a {
   color: var(--secondary-font-colour);
 }
 footer form {
-  background-color: gray;
+  background-color: #5a585880;
+  margin: 2%;
 }
 
 footer form input {
@@ -132,6 +133,9 @@ footer h5 {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+  .fancy_info {
+    flex-direction: column-reverse;
+  }
   footer section div {
     max-width: 90%;
     align-self: center;
@@ -143,6 +147,9 @@ footer h5 {
     footer section div {
       max-width: 30%;
       align-self: flex-start;
+    }
+    .fancy_info {
+      flex-direction: row;
     }
   }
   @media screen and (min-width: 1101px) {
