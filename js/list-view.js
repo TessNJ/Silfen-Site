@@ -27,10 +27,6 @@ function showItems(bags) {
     templateClone
       .querySelector("img")
       .addEventListener("mouseover", function (event) {
-        console.log("Here!", item.image2.guid);
-        // templateClone.querySelector("img").src = event.image2.guid;
-        // templateClone.querySelector("img").src = item.image2.guid;
-        console.log("Here", event);
         event.srcElement.src = item.image2.guid;
         event.srcElement.alt = item.image2.post_title;
       });

@@ -15,6 +15,7 @@
   --secondary-font: "Roboto", sans-serif;
   --primary-font-colour: black;
   --secondary-font-colour: white;
+  --tertiary-font-colour: lightgrey;
 }
 
 /*General Styling*/
@@ -44,16 +45,24 @@ footer a {
   text-decoration: none;
   color: var(--secondary-font-colour);
 }
+footer form {
+  background-color: gray;
+}
+
 footer form input {
   width: 70%;
   padding: 1.5%;
+  background-color: transparent;
+  border: none;
+  color: var(--tertiary-font-colour);
 }
 footer form button {
   width: 23%;
-  background-color: var(--secondary-font-colour);
+  background-color: transparent;
   border-radius: 0.2vw;
   border: none;
   padding: 1.5%;
+  color: var(--secondary-font-colour);
 }
 footer h5 {
   font-family: var(--secondary-font);
