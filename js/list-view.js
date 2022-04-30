@@ -12,7 +12,6 @@ async function getData() {
 }
 
 function showItems(bags) {
-  // console.log(bags._embedded);
   const template = document.querySelector("#shop-template").content;
   bags.forEach((item) => {
     const templateClone = template.cloneNode(true);
