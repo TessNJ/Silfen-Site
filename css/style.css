@@ -121,6 +121,18 @@ footer h5 {
 }
 
 /*Product general*/
+.product-section {
+  display: grid;
+}
+.product-images {
+  display: flex;
+}
+.product-images img {
+  max-width: 100%;
+}
+.related-layout {
+  display: flex;
+}
 
 /*Responsive*/
 @supports (display: grid) {
@@ -140,6 +152,15 @@ footer h5 {
     max-width: 90%;
     align-self: center;
   }
+  .product-section {
+    grid-template-columns: 5% 1fr 5%;
+  }
+  .product-images {
+    grid-column: 2;
+  }
+  .product-info {
+    grid-column: 2;
+  }
   @media screen and (min-width: 768px) {
     footer section {
       flex-wrap: nowrap;
@@ -153,5 +174,11 @@ footer h5 {
     }
   }
   @media screen and (min-width: 1101px) {
+    .product-section {
+      grid-template-columns: 5% 1fr 1fr 5%;
+    }
+    .product-info {
+      grid-column: 3;
+    }
   }
 }
