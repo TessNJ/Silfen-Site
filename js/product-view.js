@@ -52,4 +52,53 @@ function handleProduct(bag) {
       console.log(event);
       document.querySelector(".delivery div").classList.toggle("toggle-hidden");
     });
+  document
+    .querySelector(".add-symbol")
+    .addEventListener("click", function (event) {
+      let something = document.getElementById("Qty");
+      document.getElementById("Qty").stepUp(1);
+    });
+  document
+    .querySelector(".remove-symbol")
+    .addEventListener("click", function (event) {
+      let something = document.getElementById("Qty");
+      document.getElementById("Qty").stepDown(1);
+    });
+}
+
+const urlParams2 = new URLSearchParams(window.location.search);
+let url2 =
+  "https://technancy.dk/SilfenWebsitewp/wp-json/wp/v2/silfen?_embed&per_page=4";
+
+fetch(url2)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    handleRelated(data);
+  });
+
+function handleRelated(extra) {
+  console.log(extra);
+  const template2 = document.querySelector("#related-template").content;
+  extra.forEach((item) => {
+    const otherTemplate = template2.cloneNode(true);
+    //change content
+    otherTemplate.querySelector(".related-name").textContent =
+      item.title.rendered;
+    otherTemplate.querySelector(
+      ".related-price"
+    ).textContent = `DKK ${item.price},00`;
+    otherTemplate.querySelector(".related-img").src =
+      item._embedded[
+        "wp:featuredmedia"
+      ][0].media_details.sizes.thumbnail.source_url;
+    otherTemplate.querySelector(".related-img").alt =
+      item._embedded["wp:featuredmedia"][0].alt_text;
+    console.log(
+      item._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail
+    );
+    //done changing content
+    document.querySelector("main .related-layout").appendChild(otherTemplate);
+  });
 }

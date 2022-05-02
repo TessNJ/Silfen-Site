@@ -130,6 +130,10 @@ footer h5 {
 .product-section p {
   color: #00000082;
 }
+.product-section li {
+  list-style: none;
+  color: #00000082;
+}
 
 .product-section h1 {
   font-family: var(--secondary-font);
@@ -156,6 +160,7 @@ footer h5 {
 }
 .related-layout {
   display: flex;
+  justify-content: space-evenly;
 }
 .related-products {
   font-family: var(--primary-font);
@@ -165,6 +170,7 @@ footer h5 {
   border: none;
   background-color: transparent;
   text-decoration: underline;
+  padding: 5% 0%;
 }
 #add-cart {
   border: none;
@@ -175,6 +181,12 @@ footer h5 {
 }
 #Qty {
   margin: 0 7%;
+  border: none;
+  max-width: 5%;
+  outline: none;
+}
+.product-info {
+  user-select: none;
 }
 .product-info form span {
   position: absolute;
@@ -183,6 +195,7 @@ footer h5 {
 #product-main form {
   display: flex;
   position: relative;
+  user-select: none;
 }
 .remove-symbol {
   top: 20%;
@@ -191,9 +204,17 @@ footer h5 {
   top: 20%;
   left: 13%;
 }
-
 .toggle-hidden {
   display: none;
+}
+.delivery,
+.description {
+  border-top: grey 2px solid;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.delivery {
+  border-bottom: grey 2px solid;
 }
 /** Removing arrows on quantative **/
 
@@ -258,7 +279,7 @@ input[type="number"] {
     }
     .product-info {
       grid-column: 3;
-      padding-top: 20%;
+      padding-top: 30%;
     }
   }
 }
