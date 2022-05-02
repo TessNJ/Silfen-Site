@@ -134,16 +134,19 @@ footer h5 {
   list-style: none;
   color: #00000082;
 }
+.product-section ul {
+  padding: 0;
+}
 
-.product-section h1 {
+#product-main h1 {
   font-family: var(--secondary-font);
   font-weight: 400;
 }
-.product-section h2,
-.product-section h3,
-.product-section h4,
-.product-section h5,
-.product-section h6 {
+#product-main h2,
+#product-main h3,
+#product-main h4,
+#product-main h5,
+#product-main h6 {
   font-family: var(--secondary-font);
   font-weight: 350;
 }
@@ -224,6 +227,14 @@ footer h5 {
 .delivery {
   border-bottom: grey 2px solid;
 }
+
+.delivery div p,
+.description div li,
+.delivery h4,
+.description h4 {
+  padding: 2% 0;
+}
+
 .related-background {
   background-color: rgb(246, 246, 246);
   border: solid rgb(246, 246, 246) 4px;
