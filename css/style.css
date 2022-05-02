@@ -71,6 +71,57 @@ footer h5 {
 
 /*Sustainability general*/
 
+/* typography */
+
+h1 {
+  font-family: var(--secondary-font);
+  font-size: 3em;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--secondary-font);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+p {
+  font-family: var(--primary-font);
+  font-size: 1em;
+}
+
+/* main banner */
+
+#main_banner {
+  width: 100vw;
+  height: 40vw;
+  background-image: url(../assets/IMG_0731.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+#main_banner div {
+  background-color: var(--secondary-colour);
+  padding-top: 10%;
+  margin: 0 30% 0 10%;
+}
+
+#main_banner h1 {
+  color: #fff;
+}
+
+#main_banner p {
+  line-height: 1.6em;
+  color: #fff;
+}
+
 /*Shop general*/
 #shop-main h5 {
   font-family: var(--secondary-font);
