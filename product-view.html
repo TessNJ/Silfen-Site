@@ -4,10 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Product</title>
   </head>
   <body>
+    <header></header>
+    <main>
+      <section>
+        <div>
+          <div>
+            <img class="product-image_small" src="#" alt="#" />
+          </div>
+          <img class="product-image_main" src="#" alt="#" />
+        </div>
+        <div>
+          <h1 class="product-name">Name</h1>
+          <h3 class="product-price">Price</h3>
+          <p class="product-description">Description</p>
+          <div>
+            <h5>Colour</h5>
+            <!-- Colours -->
+          </div>
+          <form>
+            <input
+              type="number"
+              step="1"
+              min="1"
+              max="104"
+              name="quantative"
+              title="Qty"
+              value="1"
+              inputmode="numeric"
+            />
+            <button type="submit">Add to Cart</button>
+          </form>
+          <button type="submit">Add To Wishlist</button>
+          <div>
+            <h6>Description</h6>
+            <ul id="extra-info">
+              <li>Material: <span class="materials"></span></li>
+              <li>Dimentions: <span class="dimentions"></span></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Delivery & Returns</h6>
+            <p>
+              Delivery inside of Denmark takes 1-3 business days. Delivery
+              outside of Denmark takes 3-9 business days. The shipping time is
+              the estimated time from when the package leaves our warehouse in
+              Denmark until it reaches its destination. On all orders we offer a
+              fair shipping fee depending on shipping distance.
+            </p>
+            <p>
+              If for any reason you are not satisfied with the items purchased,
+              you can return your purchase within 21 days for a full refund. The
+              return period is counted from the day you receive your goods.
+              Click here to read more about, how to return your purchase.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Related Products</h3>
+        <div>
+          <div>Colour</div>
+          <img src="#" alt="#" />
+          <h6>Name</h6>
+          <h4>Price</h4>
+        </div>
+        <div>
+          <div>Colour</div>
+          <img src="#" alt="#" />
+          <h6>Name</h6>
+          <h4>Price</h4>
+        </div>
+        <div>
+          <div>Colour</div>
+          <img src="#" alt="#" />
+          <h6>Name</h6>
+          <h4>Price</h4>
+        </div>
+        <div>
+          <div>Colour</div>
+          <img src="#" alt="#" />
+          <h6>Name</h6>
+          <h4>Price</h4>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <h5>COME JOIN US, SUBSCRIBE HERE!</h5>
+          <p>
+            We've been waiting for you! Be the first to know about new arrivals,
+            promotional offers and much more.
+          </p>
+          <form id="footer">
+            <input
+              type="email"
+              name="footer_email"
+              id="footer_email"
+              placeholder="Email address"
+            />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+        <div>
+          <h5>SILFEN WAREHOUSE</h5>
+          <p>Adax A/S, Att: Silfen Studio</p>
+          <p>Vestre Hedevej 18</p>
+          <p>DK-4000 Roskilde</p>
+          <p>Denmark</p>
+          <p>Phone: +45 20518923</p>
+          <p>VAT: DK40912320</p>
+        </div>
+        <div>
+          <h5>HELP</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Currency</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Delivery & Returns</a></li>
+            <li><a href="#">Return Items</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="fancy_info">
+        <div>
+          <h5>© 2021. SILFEN STUDIO. ALL RIGHTS RESERVED</h5>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy & Cookie Policy</a>
+          <!-- card icons * 6 -->
+        </div>
+        <div>
+          <h5>CONNECT</h5>
+          <ul>
+            <li><a href="#">IG logo</a></li>
+            <li><a href="#">YT logo</a></li>
+            <li><a href="#">FB logo</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
     <script src="js/product-view.js"></script>
   </body>
 </html>

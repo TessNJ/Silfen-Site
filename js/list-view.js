@@ -46,7 +46,7 @@ function showItems(bags) {
     templateClone.querySelector("h5").textContent = `DKK  ${item.price},00`;
     templateClone
       .querySelector("a")
-      .setAttribute("href", `product.html?=${item.id}`);
+      .setAttribute("href", `product-view.html?=${item.id}`);
     document.querySelector("main .shop-list").appendChild(templateClone);
   });
 }
