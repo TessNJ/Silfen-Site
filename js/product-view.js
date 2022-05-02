@@ -14,7 +14,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 let url =
-  "https://technancy.dk/SilfenWebsitewp/wp-json/wp/v2/silfen/" + 57 + "?_embed";
+  "https://technancy.dk/SilfenWebsitewp/wp-json/wp/v2/silfen/" + 48 + "?_embed";
 
 fetch(url)
   .then(function (res) {
