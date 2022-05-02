@@ -51,8 +51,8 @@ footer form {
 }
 
 footer form input {
-  width: 70%;
-  padding: 1.5%;
+  width: 67%;
+  padding: 3% 4%;
   background-color: transparent;
   border: none;
   color: var(--tertiary-font-colour);
@@ -62,7 +62,7 @@ footer form button {
   background-color: transparent;
   border-radius: 0.2vw;
   border: none;
-  padding: 1.5%;
+  padding: 3% 1%;
   color: var(--secondary-font-colour);
 }
 footer h5 {
@@ -126,6 +126,11 @@ footer h5 {
   font-family: var(--primary-font);
   color: var(--primary-font-colour);
 }
+
+.product-section p {
+  color: #00000082;
+}
+
 .product-section h1,
 .product-section h2,
 .product-section h3,
@@ -133,6 +138,7 @@ footer h5 {
 .product-section h5,
 .product-section h6 {
   font-family: var(--secondary-font);
+  font-weight: 400;
 }
 
 .product-images {
@@ -147,6 +153,50 @@ footer h5 {
 .related-products {
   font-family: var(--primary-font);
   color: var(--primary-font-colour);
+}
+#add-wishlist {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#add-cart {
+  border: none;
+  border-radius: 0;
+  background-color: var(--primary-font-colour);
+  color: var(--secondary-font-colour);
+  padding: 2% 15%;
+}
+#Qty {
+  max-width: 6%;
+  padding: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.product-info form span {
+  position: absolute;
+}
+
+#product-main form {
+  display: flex;
+  position: relative;
+}
+.remove-symbol {
+  top: 20%;
+}
+.add-symbol {
+  top: 20%;
+  left: 13%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /*Responsive*/

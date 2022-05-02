@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0"
+    />
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Product</title>
   </head>
@@ -37,10 +44,18 @@
               title="Qty"
               value="1"
               inputmode="numeric"
+              id="Qty"
             />
-            <button type="submit">Add to Cart</button>
+            <span class="material-symbols-outlined remove-symbol">
+              remove
+            </span>
+            <span class="material-symbols-outlined add-symbol"> add </span>
+            <button id="add-cart" type="submit">Add to Cart</button>
           </form>
-          <button type="submit">Add To Wishlist</button>
+          <button id="add-wishlist" type="submit">
+            <span class="material-symbols-outlined"> favorite </span>Add To
+            Wishlist
+          </button>
           <div>
             <h4>Description</h4>
             <ul id="extra-info">
