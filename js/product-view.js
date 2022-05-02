@@ -37,4 +37,19 @@ function handleProduct(bag) {
   document.querySelector(".dimentions").textContent = bag.dimensions;
   document.querySelector(".product-image_main").src = bag.image2.guid;
   document.querySelector(".product-image_main").alt = bag.image2.post_title;
+
+  document
+    .querySelector(".description")
+    .addEventListener("click", function (event) {
+      console.log(event);
+      document
+        .querySelector(".description div")
+        .classList.toggle("toggle-hidden");
+    });
+  document
+    .querySelector(".delivery")
+    .addEventListener("click", function (event) {
+      console.log(event);
+      document.querySelector(".delivery div").classList.toggle("toggle-hidden");
+    });
 }
