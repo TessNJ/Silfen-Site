@@ -89,7 +89,8 @@ footer h5 {
   padding: 5% 0%;
 }
 
-#shop-main a {
+#shop-main a,
+#product-main a {
   text-decoration: none;
   color: var(--primary-font-colour);
 }
@@ -240,6 +241,9 @@ footer h5 {
 .related-background {
   background-color: rgb(246, 246, 246);
   border: solid rgb(246, 246, 246) 4px;
+}
+.related-background div {
+  padding: 5% 2%;
 }
 
 /** Removing arrows on quantative **/

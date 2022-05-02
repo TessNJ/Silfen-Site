@@ -92,7 +92,7 @@ function handleRelated(extra) {
     otherTemplate.querySelector(".related-img").src =
       item._embedded[
         "wp:featuredmedia"
-      ][0].media_details.sizes.thumbnail.source_url;
+      ][0].media_details.sizes.medium.source_url;
     otherTemplate.querySelector(".related-img").alt =
       item._embedded["wp:featuredmedia"][0].alt_text;
     console.log(
