@@ -22,7 +22,7 @@
 
 /***    Header general    ***/
 
-#headline {
+#headline-nav {
   background-color: var(--primary-colour);
   padding: 0.4rem;
   color: var(--secondary-font-colour);
@@ -189,7 +189,7 @@ footer h5 {
   text-transform: uppercase;
 }
 
-#sustainability p {
+#sustainability main p {
   font-family: var(--primary-font);
   line-height: 1.7em;
 }

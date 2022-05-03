@@ -3,9 +3,9 @@ document
   .addEventListener("click", toggleMobileMenu);
 function toggleMobileMenu() {
   var x = document.querySelector(".burgerIcon3");
-  if (x.className === "nav3") {
-    x.className += "open";
+  if (x.style.display === "block") {
+    x.style.display += "none";
   } else {
-    x.className = "nav3";
+    x.style.display = "block";
   }
 }
