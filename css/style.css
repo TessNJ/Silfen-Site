@@ -323,7 +323,10 @@ input[type="number"] {
     }
     .product-info {
       grid-column: 3;
-      padding-top: 30%;
+      padding-top: 20%;
+    }
+    .product-images {
+      padding-top: 20%;
     }
   }
 }
