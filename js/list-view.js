@@ -41,12 +41,21 @@ function showItems(bags) {
       });
 
     //End Messing with hover
-    let colours = item._embedded["wp:term"];
+    //Colours
+    const colours = item._embedded["wp:term"][1];
+    colours.forEach((colour) => {
+      var node = document.createElement("li");
+      node.style.backgroundColor = colour.name;
+      console.log(colour);
+      templateClone.querySelector(".colours").appendChild(node);
+    });
+    //End Colours
+
     templateClone.querySelector("h4").textContent = item.title.rendered;
     templateClone.querySelector("h5").textContent = `DKK  ${item.price},00`;
     templateClone
       .querySelector("a")
-      .setAttribute("href", `product-view.html?${item.id}`);
+      .setAttribute("href", `product-view.html?id=${item.id}`);
     document.querySelector("main .shop-list").appendChild(templateClone);
   });
 }
