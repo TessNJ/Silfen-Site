@@ -5,10 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Shop</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <p id="headline">Silfen is now online</p>
+      <div id="header3">
+        <nav id="nav3">
+          <ul class="list3">
+            <li><a href="index.html">Sustainability</a></li>
+            <li><a href="list-vew.html">Shop</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </nav>
+        <div id="logoimg">
+          <a href=""
+            ><img
+              src="images/SILFEN - LOGO (LILLE)1 (002) (1).png"
+              alt="logo"
+              width="170px"
+              height="23"
+          /></a>
+        </div>
+        <div class="iconss">
+          <span class="material-symbols-outlined"> person </span>
+          <span class="material-symbols-outlined"> search </span>
+          <span class="material-symbols-outlined"> favorite </span>
+          <span class="material-symbols-outlined"> shopping_bag </span>
+        </div>
+        <div id="burgerIcon3" class="nav3" onclick="toggleMobileMenu(this)">
+          <img
+            class="burgermenu"
+            src="images/burgermenu.png"
+            alt="burgermenu"
+          />
+          <ul class="list3 mobileNav3">
+            <li><a href="index.html">Sustainability</a></li>
+            <li><a href="list-vew.html">Shop</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main id="shop-main">
       <h1>All Products</h1>
       <section class="shop-list">
@@ -88,5 +134,6 @@
       </section>
     </footer>
     <script src="js/list-view.js"></script>
+    <script src="js/burgermenu.js"></script>
   </body>
 </html>
