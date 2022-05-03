@@ -41,7 +41,7 @@ function handleProduct(bag) {
   document
     .querySelector(".description")
     .addEventListener("click", function (event) {
-      console.log(event);
+      // console.log(event);
       document
         .querySelector(".description div")
         .classList.toggle("toggle-hidden");
@@ -49,7 +49,7 @@ function handleProduct(bag) {
   document
     .querySelector(".delivery")
     .addEventListener("click", function (event) {
-      console.log(event);
+      // console.log(event);
       document.querySelector(".delivery div").classList.toggle("toggle-hidden");
     });
   document
@@ -79,7 +79,7 @@ fetch(url2)
   });
 
 function handleRelated(extra) {
-  console.log(extra);
+  // console.log(extra);
   const template2 = document.querySelector("#related-template").content;
   extra.forEach((item) => {
     const otherTemplate = template2.cloneNode(true);
@@ -95,9 +95,6 @@ function handleRelated(extra) {
       ][0].media_details.sizes.medium.source_url;
     otherTemplate.querySelector(".related-img").alt =
       item._embedded["wp:featuredmedia"][0].alt_text;
-    console.log(
-      item._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail
-    );
     //done changing content
     document.querySelector("main .related-layout").appendChild(otherTemplate);
   });
