@@ -94,12 +94,7 @@ footer h5 {
   text-decoration: none;
   color: var(--primary-font-colour);
 }
-.colours span {
-  background-color: lightblue;
-}
-.colours {
-  padding: 5% 2%;
-}
+
 .shop-list {
   display: grid;
   margin-bottom: 10%;
@@ -119,6 +114,21 @@ footer h5 {
 .img-colours {
   background-color: rgb(246, 246, 246);
   border: solid rgb(246, 246, 246) 4px;
+}
+
+.colours li {
+  width: 20px;
+  height: 20px;
+  list-style: none;
+  border-radius: 1vw;
+}
+.colours li:first-child {
+  border: 1px solid black;
+}
+.colours {
+  padding: 5% 2%;
+  display: flex;
+  gap: 2%;
 }
 
 /*Product general*/
@@ -265,6 +275,7 @@ input[type="number"] {
   .shop-list {
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-around;
+    gap: 2%;
   }
   footer section {
     flex-direction: row;

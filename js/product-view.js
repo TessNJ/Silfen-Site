@@ -64,6 +64,15 @@ function handleProduct(bag) {
       let something = document.getElementById("Qty");
       document.getElementById("Qty").stepDown(1);
     });
+
+  //Colours
+  const colours = bag._embedded["wp:term"][1];
+  colours.forEach((colour) => {
+    var node = document.createElement("li");
+    node.style.backgroundColor = colour.name;
+    document.querySelector(".colours").appendChild(node);
+  });
+  //End Colours
 }
 
 const urlParams2 = new URLSearchParams(window.location.search);
@@ -95,6 +104,12 @@ function handleRelated(extra) {
       ][0].media_details.sizes.medium.source_url;
     otherTemplate.querySelector(".related-img").alt =
       item._embedded["wp:featuredmedia"][0].alt_text;
+    const colours = item._embedded["wp:term"][1];
+    colours.forEach((colour) => {
+      var node = document.createElement("li");
+      node.style.backgroundColor = colour.name;
+      otherTemplate.querySelector(".colours").appendChild(node);
+    });
     //done changing content
     document.querySelector("main .related-layout").appendChild(otherTemplate);
   });
