@@ -172,11 +172,10 @@ footer h5 {
 }
 
 .headline .gif {
-  /* position: absolute;
-  z-index: -1;
-  padding-right: 2%; */
   width: 3em;
   height: auto;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px grey;
 }
 
 #water p,
