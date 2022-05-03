@@ -120,7 +120,7 @@ footer h5 {
   width: 20px;
   height: 20px;
   list-style: none;
-  border-radius: 1vw;
+  border-radius: 100%;
 }
 .colours li:first-child {
   border: 1px solid black;
