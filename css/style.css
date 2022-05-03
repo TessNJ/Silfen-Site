@@ -22,6 +22,100 @@
 
 /*Header general*/
 
+#headline {
+  background-color: var(--primary-colour);
+  padding: 0.4rem;
+  color: var(--secondary-font-colour);
+  font-family: var(--secondary-font);
+}
+.iconss {
+  display: none;
+}
+
+#burgerIcon3 {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+#burgerIcon3 div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#burgerIcon3.nav3open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+#burgerIcon3.nav3open .bar2 {
+  opacity: 0;
+}
+
+#burgerIcon3.nav3open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+#header3 {
+  max-width: 1200px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: var(--pink-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+/* #brand a {
+  display: flex;
+  align-items: center;
+  font-family: var(--serious-font);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--purple-color);
+} */
+
+.list3 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+#list a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#nav3 {
+  display: none;
+}
+
+#burgerIcon3.nav3open .mobileNav3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobileNav3 {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 1.2rem;
+}
+.burgermenu {
+  display: block;
+  max-width: 100%;
+  height: 40px;
+  padding-right: 1.5rem;
+}
+
 /*Footer general*/
 footer {
   background-color: var(--primary-colour);
@@ -153,5 +247,42 @@ footer h5 {
     }
   }
   @media screen and (min-width: 1101px) {
+    #header3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: rgb(212, 211, 211) 1px solid;
+    }
+    #logoimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* max-width: 100%;
+      height: 30px; */
+      /* padding-top: 4px; */
+    }
+    #nav3 a {
+      color: black;
+      text-decoration: none;
+    }
+    nav ul li {
+      display: inline;
+      padding: 1rem;
+      font-size: 17px;
+      font-family: var(--secondary-font);
+    }
+    .iconss {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      padding-right: 1rem;
+    }
+    #burgerIcon3 {
+      display: none;
+    }
+    #nav3 {
+      display: block;
+    }
   }
 }
