@@ -41,13 +41,17 @@ footer ul {
 footer div {
   padding: 2%;
 }
+.connect {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6%;
+}
 footer a {
   text-decoration: none;
   color: var(--secondary-font-colour);
 }
 footer form {
   background-color: #5a585880;
-  margin: 2%;
 }
 
 footer form input {
