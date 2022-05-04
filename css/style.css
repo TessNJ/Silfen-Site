@@ -211,6 +211,11 @@ footer h5 {
 #main_banner p {
   color: #fff;
 }
+#main_banner h1 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-style: italic;
+}
 
 /* first section */
 #first .text {
