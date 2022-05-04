@@ -37,6 +37,7 @@ function handleProduct(bag) {
   document.querySelector(".dimentions").textContent = bag.dimensions;
   document.querySelector(".product-image_main").src = bag.image2.guid;
   document.querySelector(".product-image_main").alt = bag.image2.post_title;
+  document.title = bag.title.rendered;
 
   document
     .querySelector(".description")
