@@ -203,7 +203,7 @@ footer h5 {
 
 #main_banner div {
   position: relative;
-  background-color: #aed5b2e1;
+  background-color: #aed5b2e9;
   padding: 3%;
 }
 
@@ -215,7 +215,7 @@ footer h5 {
 /* first section */
 #first .text {
   margin-top: 25%;
-  background-color: #aed5b2ec;
+  background-color: #f6ff73ce;
   padding: 3%;
 }
 
@@ -285,7 +285,7 @@ footer h5 {
 
 /* Materials*/
 .materials {
-  background-color: #aed5b2be;
+  background-color: #7bafd4ca;
   padding: 5% 0;
 }
 .materials-layout {
