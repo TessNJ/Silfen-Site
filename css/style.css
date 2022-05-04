@@ -244,7 +244,7 @@ footer h5 {
 #shipping,
 #work-conditions {
   position: relative;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 
 #principles div {
@@ -283,6 +283,15 @@ footer h5 {
   font-style: italic;
   text-align: center;
   padding-top: 3%;
+}
+
+/* Squares */
+.square1 {
+  padding: 28% 15%;
+  left: -10%;
+  position: absolute;
+  background-color: blueviolet;
+  z-index: -10;
 }
 
 /* Materials*/
@@ -625,6 +634,9 @@ input[type="number"] {
     #first .text {
       padding: 3%;
     }
+    /* .square1 {
+      padding: 35% 15%;
+    } */
   }
 
   @media screen and (min-width: 1101px) {
@@ -704,5 +716,8 @@ input[type="number"] {
     .materials .cotton {
       grid-column: 2;
     }
+    /* .square1 {
+      padding: 20% 15%;
+    } */
   }
 }
